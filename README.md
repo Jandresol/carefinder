@@ -1,72 +1,85 @@
-# CareFinder+ Prototype
+# CareFinder+: Intelligent Referral Coordination Platform
 
-A high-fidelity prototype for **CareFinder+**, an intelligent referral
-coordination platform designed to help hospital discharge planners and
-case managers place patients faster.
+A high-fidelity prototype for an AI-assisted case-management and referral platform that helps hospital discharge planners and case managers identify appropriate providers and place patients faster—without replacing human judgment.
 
 ## Vision
 
-CareFinder+ reduces administrative work by preparing referrals before a
-coordinator begins reviewing them. Rather than replacing staff, the
-platform prepares clinical summaries, verifies information, recommends
-facilities, and assembles referral packets for approval.
+CareFinder+ reduces administrative burden in patient placement by **preparing referrals before a coordinator begins reviewing them**. The platform handles clinical summary preparation, information verification, facility recommendations, and referral packet assembly—allowing care coordinators to focus on clinical judgment and relationship building rather than paperwork.
 
-## Prototype Highlights
+## Problem Space
 
--   Warm, healthcare-focused UI
--   Dashboard with Today's Priorities
--   Guided product tour
--   Patient Workspace
--   Placement Analysis
--   Explainable Facility Recommendations
--   Referral Packet Review
--   Referral Timeline
--   Facility Network
--   Outcome Analytics
+Discharge planning and patient placement are critical yet incredibly time-consuming. Case managers and discharge coordinators must:
+- Manually review patient clinical records
+- Search through networks of potential facilities
+- Verify bed availability, insurance coverage, and patient compatibility
+- Assemble multi-page referral packets
+- Manage back-and-forth communication
 
-## Tech
+This process delays patient placement, increases readmission rates, and burns out care coordinators.
 
-This prototype is intentionally simple:
+## Solution
 
--   Single `index.html`
--   HTML, CSS, and vanilla JavaScript
--   No build step
--   No backend
--   Suitable for GitHub Pages
+CareFinder+ acts as an **intelligent preparation assistant** that:
+- **Summarizes** patient clinical profiles automatically
+- **Verifies** insurance coverage and patient eligibility
+- **Recommends** facilities with explainable reasoning
+- **Assembles** complete referral packets ready for review
+- **Tracks** referral status and outcomes in real-time
 
-## Running Locally
+## Prototype Features
 
-1.  Clone the repository.
-2.  Open `index.html` in any modern browser.
+### 🏥 Dashboard
+- **Today's Priorities**: Pending placements ranked by urgency
+- **Warm, healthcare-focused UI**: Designed for busy clinical environments
+- **Guided Product Tour**: Onboarding for first-time users
 
-Or serve locally:
+### 👤 Patient Workspace
+- Clinical summary with key medical facts
+- Insurance and coverage verification
+- Patient preferences and requirements
+- Relevant comorbidities and special considerations
 
-``` bash
-python -m http.server
-```
+### 🔍 Placement Analysis
+- Multi-criteria facility matching
+- Bed availability real-time status
+- Geographic proximity and transportation options
+- Cost and insurance compatibility analysis
 
-Then visit:
+### 💡 Explainable Facility Recommendations
+- Top-ranked facilities with reasoning
+- Why each facility matches patient needs
+- Risk factors and considerations
+- Comparison tables
 
-    http://localhost:8000
+### 📋 Referral Packet Review
+- Auto-generated referral documents
+- Pre-populated forms and required info
+- Document assembly workflow
+- Approval and send capability
 
-## Product Principles
+### 📊 Referral Timeline & Outcomes
+- Track referral status from submission to placement
+- Outcome recording (accepted, bed occupied date, etc.)
+- Performance analytics and insights
+- Historical referral patterns
 
--   AI is a capability, not the brand.
--   Coordinators stay in control.
--   Recommendations are explainable.
--   Work is prepared before review.
--   Measure outcomes, not clicks.
+### 🏢 Facility Network
+- View partner facilities, beds, and specialties
+- Capacity and current census
+- Reputation and outcome tracking
 
-## Future Roadmap
+## Technical Stack
 
--   Multi-patient command center
--   Live facility capacity
--   EHR/FHIR integration
--   Insurance verification
--   Collaborative comments
--   Real-time referral status
--   Analytics and reporting
+**Intentionally Simple & Deployable:**
+- Single `index.html` file
+- HTML, CSS, vanilla JavaScript
+- No build step or dependencies
+- No backend required
+- Deployable via GitHub Pages
 
-## License
+**Why this approach?**
+- Rapid iteration with stakeholders
+- Easy testing in clinical environments
+- Simple deployment across hospital systems
+- Natural friction points guide next-phase architecture
 
-Prototype for demonstration and product exploration purposes.
